@@ -1,4 +1,4 @@
-namespace PetHealthCenter.Web.Models
+namespace PetHealthCenter.Domain
 {
     public class ErrorViewModel
     {

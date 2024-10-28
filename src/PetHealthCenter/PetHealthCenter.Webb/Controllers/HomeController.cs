@@ -1,12 +1,17 @@
 using Microsoft.AspNetCore.Mvc;
-using PetHealthCenter.Web.Models;
+using PetHealthCenter.Domain;
 using System.Diagnostics;
 
-namespace PetHealthCenter.Web.Controllers
+namespace PetHealthCenter.Webb.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly ILogger<HomeController> _logger;
 
+        public HomeController(ILogger<HomeController> logger)
+        {
+            _logger = logger;
+        }
 
         public IActionResult Index()
         {
