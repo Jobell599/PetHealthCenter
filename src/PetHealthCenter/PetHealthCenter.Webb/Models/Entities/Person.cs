@@ -1,6 +1,6 @@
 ﻿namespace PetHealthCenter.Webb.Models.Entities
 {
-    public class Clients
+    public class Person
     {
     }
 }

@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using PetHealthCenter.Webb.Data;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<PetHealthCenterDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("PetHealthCenterDbContext") ?? throw new InvalidOperationException("Connection string 'PetHealthCenterDbContext' not found.")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("PetHealthCenterStrConnection")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

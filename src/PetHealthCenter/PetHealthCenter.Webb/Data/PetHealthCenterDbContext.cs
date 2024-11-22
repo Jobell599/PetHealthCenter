@@ -14,6 +14,6 @@ namespace PetHealthCenter.Webb.Data
         {
         }
 
-        public DbSet<PetHealthCenter.Domain.Entities.Clients> Clients { get; set; } = default!;
+        public DbSet<PetHealthCenter.Domain.Entities.Client> Clients { get; set; } = default!;
     }
 }

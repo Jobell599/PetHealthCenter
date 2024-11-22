@@ -1,4 +1,4 @@
-﻿namespace PetHealthCenter.Webb.Models.Entities
+﻿namespace PetHealthCenter.Domain.Entities
 {
     public class Pet
     {

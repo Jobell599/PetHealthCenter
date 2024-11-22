@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PetHealthCenter.Domain.Entities
 {
-    public class Clients
+    public class Client
     {
         [Key]
         public int Id { get; set; }
@@ -13,6 +13,6 @@ namespace PetHealthCenter.Domain.Entities
         public string Phone { get; set; }
         public string Email { get; set; }
         public DateTime RegistrationDate { get; set; }
-
+        
     }
 }
