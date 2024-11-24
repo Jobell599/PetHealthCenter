@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetHealthCenter.API", "PetHealthCenter.API\PetHealthCenter.API.csproj", "{17E0354D-ADCE-43B9-8119-A25682716574}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetHealthCenter.API", "PetHealthCenter.API\PetHealthCenter.API.csproj", "{17E0354D-ADCE-43B9-8119-A25682716574}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetHealthCenter.Domain", "PetHealthCenter.Domain\PetHealthCenter.Domain.csproj", "{B3DD243D-75CA-44DE-A179-7C3D9059EE86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetHealthCenter.Domain", "PetHealthCenter.Domain\PetHealthCenter.Domain.csproj", "{B3DD243D-75CA-44DE-A179-7C3D9059EE86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetHealthCenter.Webb", "PetHealthCenter.Webb\PetHealthCenter.Webb.csproj", "{7DB15128-5648-4120-B414-36586430325C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetHealthCenter.Webb", "PetHealthCenter.Webb\PetHealthCenter.Webb.csproj", "{7DB15128-5648-4120-B414-36586430325C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetHealthCenter.Infrastructure", "PetHealthCenter.Infrastructure\PetHealthCenter.Infrastructure.csproj", "{C2C3AB0F-630C-4C5D-8F45-DBAD9A875DD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetHealthCenter.Infrastructure", "PetHealthCenter.Infrastructure\PetHealthCenter.Infrastructure.csproj", "{C2C3AB0F-630C-4C5D-8F45-DBAD9A875DD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetHealthCenter.Application", "PetHealthCenter.Application\PetHealthCenter.Application.csproj", "{4556EB3C-96D8-4779-9FF2-D0D6F1888ECC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetHealthCenter.Application", "PetHealthCenter.Application\PetHealthCenter.Application.csproj", "{4556EB3C-96D8-4779-9FF2-D0D6F1888ECC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetHealthCenter.Persistence", "PetHealthCenter.Persistence\PetHealthCenter.Persistence.csproj", "{AB2FF2CC-8CD5-4D07-B348-1AA6A50C62FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetHealthCenter.Common", "PetHealthCenter.Common\PetHealthCenter.Common.csproj", "{16770924-F7A9-4CD4-B28F-AAE95AA63975}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{4556EB3C-96D8-4779-9FF2-D0D6F1888ECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4556EB3C-96D8-4779-9FF2-D0D6F1888ECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4556EB3C-96D8-4779-9FF2-D0D6F1888ECC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB2FF2CC-8CD5-4D07-B348-1AA6A50C62FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB2FF2CC-8CD5-4D07-B348-1AA6A50C62FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB2FF2CC-8CD5-4D07-B348-1AA6A50C62FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB2FF2CC-8CD5-4D07-B348-1AA6A50C62FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16770924-F7A9-4CD4-B28F-AAE95AA63975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16770924-F7A9-4CD4-B28F-AAE95AA63975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16770924-F7A9-4CD4-B28F-AAE95AA63975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16770924-F7A9-4CD4-B28F-AAE95AA63975}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
