@@ -1,59 +1,56 @@
 ﻿@model PetHealthCenter.Domain.Entities.Client
 
-@{
-    ViewData["Title"] = "Edit";
-}
+<h1>Edit a Person</h1>
 
-<h1>Edit</h1>
 
-<h4>Clients</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="LastName" class="control-label"></label>
-                <input asp-for="LastName" class="form-control" />
-                <span asp-validation-for="LastName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Address" class="control-label"></label>
-                <input asp-for="Address" class="form-control" />
-                <span asp-validation-for="Address" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Phone" class="control-label"></label>
-                <input asp-for="Phone" class="form-control" />
-                <span asp-validation-for="Phone" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="RegistrationDate" class="control-label"></label>
-                <input asp-for="RegistrationDate" class="form-control" />
-                <span asp-validation-for="RegistrationDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+    <form asp-action="Edit">
+    <input class="form-control" asp-for="Id" />
+        <div class="row">
+            <div class=" form-grow">
+                <label aps-for="Name" class="form-label col-md-2"> Name</label>
+                <div class="col-md-2">
+                    <input class="form-control" asp-for="Name" />
+                </div>
+            </div>
+        </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+        <div class="row">
+            <div class=" form-grow">
+                <label aps-for="LastName" class="form-label col-md-2"> LastName</label>
+                <div class="col-md-2">
+                    <input class="form-control" asp-for="LastName" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" form-grow">
+                <label aps-for="Address" class="form-label col-md-2"> Address</label>
+                <div class="col-md-2">
+                    <textarea asp-for="Address" cols="3" class="form-control">
+                    </textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" form-grow">
+                <label aps-for="Phone" class="form-label col-md-2"> Phone</label>
+                <div class="col-md-2">
+                    <input class="form-control" asp-for="Phone" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" form-grow">
+                <label aps-for="Email" class="form-label col-md-2"> Email</label>
+                <div class="col-md-2">
+                    <input class="form-control" asp-for="Email" />
+                </div>
+            </div>
+        </div>
+
+        <input type="submit" class="btn btn-primary" value="Save" />
+        <a asp-action="Index" class="btn btn-secondary"> Cancel</a>
+    </form>
+
+

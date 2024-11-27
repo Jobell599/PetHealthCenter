@@ -9,10 +9,10 @@ namespace PetHealthCenter.Infrastructure.Exceptions
     public class ClientRepository
     {
         private readonly PetHealthCenterDbContext _context;
-        public ClientRepository(PetHealthCenterDbContext context) 
-        { 
-           _context = context;
+        public ClientRepository(PetHealthCenterDbContext context)
+        {
+            _context = context;
         }
-        public 
+       
     }
 }
